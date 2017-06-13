@@ -97,7 +97,7 @@ public class SuspendLayout extends RelativeLayout {
                     if(releasedChild.getBottom()>getHeight()){
                         mY=getHeight()-releasedChild.getMeasuredHeight();
                     }
-                    if(releasedChild.getRight()-releasedChild.getMeasuredWidth()/2<getWidth()){
+                    if(releasedChild.getRight()-releasedChild.getMeasuredWidth()/2<getWidth()/2){
                         initPointPosition.x= (int) (getWidth()-mDragView.getWidth()*mPercent);
                         initPointPosition.y=mY;
                         mDragger.settleCapturedViewAt(initPointPosition.x,initPointPosition.y);
